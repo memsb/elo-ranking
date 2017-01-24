@@ -1,8 +1,5 @@
 exports.getRating = function (result, playerOneRating, playerTwoRating) {
-    let qa = Math.pow(10, playerOneRating / 400);
-    let qb = Math.pow(10, playerTwoRating / 400);
-
-    let expectedResult = qa / (qa + qb);
+    let expectedResult = 1 / (1 + Math.pow(10, (playerTwoRating - playerOneRating) / 400));
     let expectedResultDifference = result - expectedResult;
 
     let newRating = playerOneRating + getKFactor(playerOneRating) * expectedResultDifference;
