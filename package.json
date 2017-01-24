@@ -1,0 +1,15 @@
+{
+  "name": "elo-ranking",
+  "version": "1.0.0",
+  "description": "An implementation of the ELO ranking algorithm as a JS Class",
+  "main": "elo.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
